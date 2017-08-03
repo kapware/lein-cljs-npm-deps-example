@@ -8,7 +8,7 @@
                  [org.clojure/clojurescript "1.9.854"]
                  [org.clojure/core.async  "0.3.442"
                   :exclusions [org.clojure/tools.reader]]]
-  :plugins [[lein-figwheel "0.5.12-SNAPSHOT"]
+  :plugins [[lein-figwheel "0.5.12"]
             [lein-cljsbuild "1.1.5" :exclusions [[org.clojure/clojure]]]]
   :source-paths ["src"]
   :cljsbuild {:builds
@@ -35,7 +35,7 @@
 
   :figwheel {:css-dirs ["resources/public/css"]}
   :profiles {:dev {:dependencies [[binaryage/devtools "0.9.2"]
-                                  [figwheel-sidecar "0.5.12-SNAPSHOT"]
+                                  [figwheel-sidecar "0.5.12"]
                                   [com.cemerick/piggieback "0.2.1"]]
                    :source-paths ["src" "dev"]
                    :repl-options {:nrepl-middleware [cemerick.piggieback/wrap-cljs-repl]}
